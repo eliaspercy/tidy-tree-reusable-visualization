@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reusable Tidy Tree</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+    <svg id="tidyTreeVis"></svg>
+    <script type="module">
+      import{Tree} from './visualization.js';
+      var tree = new Tree("./imdb-data.json");
+      tree.newTree(2000, 2000, "steelblue");
+    </script>
+  </body>
+</html>
